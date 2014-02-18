@@ -1,0 +1,16 @@
+hostname: localhost
+
+remote_hosts:
+  - http://localhost
+  - http://www.google.com
+
+rates:
+  - 10
+  - 20
+  - 40
+
+seconds:
+  - 1
+  - 2
+  - 4
+
