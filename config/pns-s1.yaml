@@ -1,0 +1,23 @@
+hostname: pns-s1
+
+remote_hosts:
+  - http://pns-m2.networld.to/index.html
+  - http://pns-m2.networld.to/index.php
+  - http://pns-m2.networld.to/blog
+  - http://pns-m1.networld.to/index.html
+  - http://pns-m1.networld.to/index.php
+  - http://pns-m1.networld.to/blog
+  - http://pns-s2.networld.to/index.html
+  - http://pns-s2.networld.to/index.php
+  - http://pns-s2.networld.to/blog
+
+rates:
+  - 5
+  - 10
+  - 20
+
+seconds:
+  - 10
+  - 10
+  - 10
+

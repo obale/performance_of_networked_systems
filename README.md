@@ -1,11 +1,29 @@
-# Performance of Networked Systems
+# Performance
 
-This repository is used for the performance script(s) developed during the
-course "Performance of Networked Systems" at the VU Amsterdam.
+TODO: Write a gem description
 
-## Setup
+## Installation
 
-1. bitcoin-ruby/config/default.yaml:
-        * Change here 'hostname'
-        * Add 'remote_hosts'
-        * Change or add 'rates' and 'seconds' (same number of entries)
+Add this line to your application's Gemfile:
+
+    gem 'performance'
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install performance
+
+## Usage
+
+TODO: Write usage instructions here
+
+## Contributing
+
+1. Fork it ( http://github.com/<my-github-username>/performance/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request

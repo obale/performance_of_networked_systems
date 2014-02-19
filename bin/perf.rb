@@ -15,4 +15,4 @@ rescue LoadError => e
 end
 
 Performance::HttpLoad.exec
-
+Performance::Measurement.to_csv_file
