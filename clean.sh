@@ -1,3 +1,3 @@
 #!/bin/bash
 rm /tmp/pns*.csv
-rm /tmp/pns*.sqlite3
+rm /tmp/performance*.sqlite3
