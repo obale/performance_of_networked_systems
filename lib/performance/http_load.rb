@@ -19,14 +19,25 @@ class Performance::HttpLoad
         max = perfs[3]
         min = perfs[5]
 
+        first_line = output.lines[0].split(" ")
+        fetches = first_line[0]
+        max_parallel = first_line[2]
+        fetches_per_second = output.lines[2].split(" ").first
+
+        puts output
+
         Performance::Measurement.create(
           endpoint: host,
           mean_msecs: perfs[1],
           max_msecs: perfs[3],
           min_msecs: perfs[5],
           seconds: seconds[i],
-          rate: rates[i]
+          rate: rates[i],
+          fetches: fetches,
+          max_parallel: max_parallel,
+          fetches_per_second: fetches_per_second
         )
+        puts Performance::Measurement.last.to_json
       end
       puts "-----------------"
     end
