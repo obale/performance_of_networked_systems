@@ -23,7 +23,7 @@ class Performance::Measurement
 
   # Export all entries in the database to a CSV (comma separated values) file.
   def self.to_csv_file(directory = "/tmp/")
-    now = Time.now.strftime("%Y-%m-%d_%H_%m")
+    now = Time.now.strftime("%Y-%m-%d_%H_%M")
     remote_hosts = CONFIG['remote_hosts']
     remote_hosts.each do |host|
       type = host.split("/").last.split(".").last
